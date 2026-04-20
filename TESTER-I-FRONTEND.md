@@ -6,6 +6,14 @@
 
 Att klicka igenom appen manuellt fungerar när den är liten, men ju större projektet blir desto lättare är det att missa saker. Automatiserade tester körs på sekunder och upptäcker direkt om något som fungerade har gått sönder.
 
+**Fler anledningar att skriva tester:**
+
+- **Trygghet att ändra kod** — Du kan refaktorera utan rädsla. Om testerna passerar vet du att du inte förstörde något.
+- **Dokumentation** — Testerna visar hur koden är tänkt att användas. En ny utvecklare kan läsa testerna och förstå vad en funktion ska göra.
+- **Snabbare utveckling på sikt** — Det tar tid att skriva tester, men du sparar tid genom att slippa jaga buggar manuellt.
+- **Bättre kodkvalitet** — Kod som är lätt att testa är ofta bättre strukturerad. Om en funktion är svår att testa gör den förmodligen för mycket.
+- **Samarbete i team** — I ett team kan någon annan ändra din kod. Tester skyddar mot att ändringar av misstag förstör befintlig funktionalitet.
+
 ---
 
 ## Testpyramiden
