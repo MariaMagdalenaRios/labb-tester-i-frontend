@@ -67,7 +67,7 @@ RTL har en tydlig prioriteringsordning — **försök alltid högsta först:**
 
 ---
 
-### Queries som används i labben
+### Queries som ska användas i labben
 
 #### getByRole — hitta via ARIA-roll
 
