@@ -332,15 +332,4 @@ Du ska kunna redogöra för följande frågor för din lärare:
 - [Cypress dokumentation](https://docs.cypress.io/)
 - [Playwright dokumentation](https://playwright.dev/docs/intro)
 
-## 🔄 Jest vs Vitest — snabbreferens
 
-Allt i denna labb använder Vitest, men kursmålet inkluderar Jest. Skillnaden i praktiken:
-
-| Vitest | Jest |
-|---|---|
-| `vi.fn()` | `jest.fn()` |
-| `vi.mock('./modul')` | `jest.mock('./modul')` |
-| Config i `vite.config.ts` | Config i `jest.config.js` |
-| Kör med `npx vitest` | Kör med `npx jest` |
-
-API:et är nästan identiskt. React Testing Library fungerar med båda.
