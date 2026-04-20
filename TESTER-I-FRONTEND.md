@@ -1,3 +1,9 @@
+# Konversationslogg: Planering av testning-kursmoment (FJS25)
+
+Datum: 2026-04-15
+
+---
+
 ## Bakgrund
 
 Kursmål: "Testa med Jest och React Testing Library"
@@ -6,20 +12,28 @@ Verktyg: Vitest + React Testing Library (men studenterna ska veta skillnaden med
 Koncept: Enhetstester, integrationstester, E2E-tester
 Utforskande del: Cypress / Playwright
 
+Planen är en förberedande föreläsning följd av en examinerande laboration. Studenterna utgår från en befintlig kodbas (Budgetplaneraren) där de ska skriva tester.
 
 ---
 
-## Del 1: Teori
+## Del 1: Teorigrunderna
 
 ### Testpyramiden — de tre nivåerna
 
 ```
-        /  E2E  \          Få, långsamma, testar hela flödet
-       /----------\
-      / Integration \      Mellanmånga, testar samspel
-     /----------------\
-    /   Enhetstester    \  Många, snabba, testar isolerade delar
-   /____________________\
+                 ╱╲
+                ╱  ╲
+               ╱ E2E╲            ← Få, långsamma
+              ╱      ╲              Cypress / Playwright
+             ╱────────╲
+            ╱          ╲
+           ╱ Integration╲       ← Mellanmånga
+          ╱              ╲        Vitest + RTL
+         ╱────────────────╲
+        ╱                  ╲
+       ╱   Enhetstester     ╲   ← Många, snabba
+      ╱                      ╲    Vitest
+     ╱════════════════════════╲
 ```
 
 ### 1. Enhetstester (Unit tests)

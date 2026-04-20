@@ -132,7 +132,7 @@ expect(null).not.toBeDefined()
 
 ---
 
-## Mocking — vi.fn() och vi.mock()
+## Mocking — vi.fn()
 
 Mocking låter dig ersätta riktiga funktioner med kontrollerade kopior. Användbart när du vill:
 - Testa att en callback anropades
@@ -167,19 +167,6 @@ expect(mockFn()).toBe(42)
 const mockFn2 = vi.fn()
 mockFn2.mockReturnValue('hej')
 expect(mockFn2()).toBe('hej')
-```
-
-### vi.spyOn() — spionera på befintliga funktioner
-
-```ts
-const calculator = {
-  add: (a: number, b: number) => a + b,
-}
-
-const spy = vi.spyOn(calculator, 'add')
-calculator.add(1, 2)
-
-expect(spy).toHaveBeenCalledWith(1, 2)
 ```
 
 ### Vanliga mock-matchers
@@ -263,8 +250,6 @@ it('hämtar data', async () => {
 |---|---|
 | `vi.fn()` | `jest.fn()` |
 | `vi.mock('./modul')` | `jest.mock('./modul')` |
-| `vi.spyOn(obj, 'metod')` | `jest.spyOn(obj, 'metod')` |
-| `vi.restoreAllMocks()` | `jest.restoreAllMocks()` |
 | `import { vi } from 'vitest'` | Globalt tillgängligt |
 | Config i `vite.config.ts` | Config i `jest.config.js` |
 | Inbyggt ESM-stöd | Kräver Babel för ESM |

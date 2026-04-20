@@ -1,4 +1,4 @@
-# 🧪 Laboration: Testning i React med Vitest och React Testing Library
+# 💻 Laboration: Testning i React med Vitest och React Testing Library
 
 ## 🎯 Kursmål
 
@@ -340,7 +340,6 @@ Allt i denna labb använder Vitest, men kursmålet inkluderar Jest. Skillnaden i
 |---|---|
 | `vi.fn()` | `jest.fn()` |
 | `vi.mock('./modul')` | `jest.mock('./modul')` |
-| `vi.spyOn(obj, 'metod')` | `jest.spyOn(obj, 'metod')` |
 | Config i `vite.config.ts` | Config i `jest.config.js` |
 | Kör med `npx vitest` | Kör med `npx jest` |
 
