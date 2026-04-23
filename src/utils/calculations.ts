@@ -15,7 +15,7 @@ export function calculateTotalByType(
     .reduce((sum, t) => sum + t.amount, 0)
 }
 
-export function calculateByCategory(
+export function calculateExpensesByCategory(
   transactions: Transaction[]
 ): Record<Category, number> {
   const result: Record<Category, number> = {

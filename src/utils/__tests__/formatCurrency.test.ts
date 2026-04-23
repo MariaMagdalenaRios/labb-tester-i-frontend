@@ -16,3 +16,6 @@ describe('formatCurrency', () => {
     expect(formatCurrency(-50)).toBe('-50.00 kr') //Hanterar negativa tal korrekt (t.ex. -50 → "-50.00 kr")
   })
 })
+
+//Tests one utility function in isolation formatCurrency(), with no component rendering or multi-part interaction.
+//Only the math logic. It doesn't know React exists.

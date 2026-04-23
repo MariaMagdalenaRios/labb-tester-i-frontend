@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { calculateTotal, calculateTotalByType, calculateByCategory } from "../calculations";
+import { calculateTotal, calculateTotalByType, calculateExpensesByCategory } from "../calculations";
 import type { Transaction } from "../../types";
 //Skapa en const med testdata högst upp i filen, t.ex:
 const testTransactions: Transaction[] = [
@@ -36,7 +36,7 @@ const testTransactions: Transaction[] = [
     date: '2025-04-03', 
   } 
 ];
-
+//unit testing - calculateTotal(), calculateTotalByType(), calculateExpensesByCategory(). Each test target a single function.
 describe('calculateTotal', () => {
   it('returnerar korrekt balans', () => {
     expect(calculateTotal(testTransactions)).toBe(12500); //Returnerar korrekt balans (inkomster minus utgifter)
@@ -61,9 +61,9 @@ describe('calculateTotalByType', () => {
     expect(calculateTotalByType(noExpenses, 'expense')).toBe(0); //Returnerar 0 om inga transaktioner av den typen finns
   });
 });
-describe('calculateByCategory', () => {
+describe('calculateExpensesByCategory', () => {
   it('returnerar ett objekt med summerade värden per kategori', () => {
-    const result = calculateByCategory(testTransactions);
+    const result = calculateExpensesByCategory(testTransactions);
     expect(result).toEqual({
       salary: 0,
       housing: 8000,

@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react'
+import { render, screen } from '@testing-library/react' //No interaction → render + screen
 import { describe, it, expect} from 'vitest'
 import type { Transaction } from '../../types'
 import { Balance } from '../Balance';
@@ -29,6 +29,7 @@ const mockTransactions: Transaction[] = [
     date: '2025-04-02',     
   },
 ];
+//render(<Balance transactions={testTransactions} />) aren't just testing one single thing. it testing a collaboration:
 
 describe('Balance component', () => {
     it('visar korrekt balans baserat på transaktioner', () => {

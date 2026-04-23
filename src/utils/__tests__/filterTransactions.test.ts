@@ -1,3 +1,4 @@
+//bonusupgifter
 import { describe, it, expect } from "vitest";
 import { filterTransactions } from "../filterTransactions";
 import type { Transaction } from "../../types";
@@ -71,4 +72,3 @@ describe('filterTransactions', () => {
   });
 
 });
-//bonusupgifter
